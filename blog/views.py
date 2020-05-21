@@ -14,9 +14,9 @@ def post_detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
     return render(request, 'blog/post_detail.html', {'post': post})
 
-def post_new(request):
-    form = PostForm()
-    return render(request, 'blog/post_edit.html', {'form': form})
+# def post_new(request):
+#     form = PostForm()
+#     return render(request, 'blog/post_edit.html', {'form': form})
 
 # đặt tên cái đuôi là link là "blog//post_edit.html" 
 
